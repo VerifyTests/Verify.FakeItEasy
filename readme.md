@@ -1,6 +1,6 @@
 # <img src="/src/icon.png" height="30px"> Verify.FakeItEasy
 
-[![Build status](https://ci.appveyor.com/api/projects/status/2yqj2feuuhlb1kf0?svg=true)](https://ci.appveyor.com/project/SimonCropp/Verify-FakeItEasy)
+[![Build status](https://ci.appveyor.com/api/projects/status/gla1okqvccljt4a8?svg=true)](https://ci.appveyor.com/project/SimonCropp/Verify-FakeItEasy)
 [![NuGet Status](https://img.shields.io/nuget/v/Verify.FakeItEasy.svg)](https://www.nuget.org/packages/Verify.FakeItEasy/)
 
 Adds [Verify](https://github.com/VerifyTests/Verify) support for verifying [FakeItEasy](https://fakeiteasy.github.io/) types.
@@ -32,7 +32,7 @@ public interface ITarget
 <sup><a href='/src/Tests/ITarget.cs#L1-L4' title='Snippet source file'>snippet source</a> | <a href='#snippet-ITarget.cs' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
-It `.ReceivedCalls()` can be verified:
+Its `.GetCalls()` can be verified:
 
 <!-- snippet: ReceivedCalls -->
 <a id='snippet-receivedcalls'></a>
