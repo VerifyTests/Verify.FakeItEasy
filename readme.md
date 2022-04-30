@@ -38,20 +38,21 @@ Its `.GetCalls()` can be verified:
 <a id='snippet-receivedcalls'></a>
 ```cs
 [Fact]
-public Task Test()
+public Task ReceivedCalls()
 {
     var target = A.Fake<ITarget>();
     target.Method(1, 2);
-    return Verify(Fake.GetCalls(target));
+    var calls = Fake.GetCalls(target);
+    return Verify(calls);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L6-L16' title='Snippet source file'>snippet source</a> | <a href='#snippet-receivedcalls' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L6-L17' title='Snippet source file'>snippet source</a> | <a href='#snippet-receivedcalls' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Will result in:
 
-<!-- snippet: Tests.Test.verified.txt -->
-<a id='snippet-Tests.Test.verified.txt'></a>
+<!-- snippet: Tests.ReceivedCalls.verified.txt -->
+<a id='snippet-Tests.ReceivedCalls.verified.txt'></a>
 ```txt
 [
   {
@@ -63,5 +64,22 @@ Will result in:
   }
 ]
 ```
-<sup><a href='/src/Tests/Tests.Test.verified.txt#L1-L9' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.Test.verified.txt' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.ReceivedCalls.verified.txt#L1-L9' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.ReceivedCalls.verified.txt' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+A instance of `FakeManager` can also be verified.
+
+<!-- snippet: FakeManager -->
+<a id='snippet-fakemanager'></a>
+```cs
+[Fact]
+public Task FakeManager()
+{
+    var target = A.Fake<ITarget>();
+    target.Method(1, 2);
+    var fakeManager = Fake.GetFakeManager(target);
+    return Verify(fakeManager);
+}
+```
+<sup><a href='/src/Tests/Tests.cs#L19-L30' title='Snippet source file'>snippet source</a> | <a href='#snippet-fakemanager' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
