@@ -3,12 +3,9 @@
 public static class VerifyFakeItEasy
 {
     public static void Enable() =>
-        VerifierSettings.ModifySerialization(settings =>
+        VerifierSettings.AddExtraSettings(serializer =>
         {
-            settings.AddExtraSettings(serializer =>
-            {
-                serializer.Converters.Add(new CallConverter());
-                serializer.Converters.Add(new FakeConverter());
-            });
+            serializer.Converters.Add(new CallConverter());
+            serializer.Converters.Add(new FakeConverter());
         });
 }
