@@ -1,6 +1,5 @@
 ﻿using FakeItEasy;
 
-[UsesVerify]
 public class Tests
 {
     #region ReceivedCalls
