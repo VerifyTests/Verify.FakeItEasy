@@ -42,7 +42,7 @@ public interface ITarget
 Its `.GetCalls()` can be verified:
 
 <!-- snippet: ReceivedCalls -->
-<a id='snippet-receivedcalls'></a>
+<a id='snippet-ReceivedCalls'></a>
 ```cs
 [Fact]
 public Task ReceivedCalls()
@@ -53,7 +53,7 @@ public Task ReceivedCalls()
     return Verify(calls);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L5-L16' title='Snippet source file'>snippet source</a> | <a href='#snippet-receivedcalls' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L5-L16' title='Snippet source file'>snippet source</a> | <a href='#snippet-ReceivedCalls' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Will result in:
@@ -77,7 +77,7 @@ Will result in:
 A instance of `FakeManager` can also be verified.
 
 <!-- snippet: FakeManager -->
-<a id='snippet-fakemanager'></a>
+<a id='snippet-FakeManager'></a>
 ```cs
 [Fact]
 public Task FakeManager()
@@ -88,5 +88,5 @@ public Task FakeManager()
     return Verify(fakeManager);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L18-L29' title='Snippet source file'>snippet source</a> | <a href='#snippet-fakemanager' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L18-L29' title='Snippet source file'>snippet source</a> | <a href='#snippet-FakeManager' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
