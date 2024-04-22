@@ -7,6 +7,6 @@
     <PackageReference Include="Verify" Version="24.1.0" />
     <PackageReference Include="ProjectDefaults" Version="1.0.126" PrivateAssets="all" />
     <PackageReference Include="FakeItEasy" Version="8.2.0" />
-    <PackageReference Include="Polyfill" Version="4.7.0" PrivateAssets="all" />
+    <PackageReference Include="Polyfill" Version="4.8.0" PrivateAssets="all" />
   </ItemGroup>
 </Project>
