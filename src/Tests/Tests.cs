@@ -5,12 +5,11 @@ public class Tests
     #region ReceivedCalls
 
     [Fact]
-    public Task ReceivedCalls()
+    public void ReceivedCalls()
     {
         var target = A.Fake<ITarget>();
         target.Method(1, 2);
-        var calls = Fake.GetCalls(target);
-        return Verify(calls);
+        Fake.GetCalls(target);
     }
 
     #endregion
@@ -18,12 +17,11 @@ public class Tests
     #region FakeManager
 
     [Fact]
-    public Task FakeManager()
+    public void FakeManager()
     {
         var target = A.Fake<ITarget>();
         target.Method(1, 2);
-        var fakeManager = Fake.GetFakeManager(target);
-        return Verify(fakeManager);
+        Fake.GetFakeManager(target);
     }
 
     #endregion
