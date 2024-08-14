@@ -1,4 +1,5 @@
 ﻿using FakeItEasy;
+using Xunit;
 
 public class Tests
 {
