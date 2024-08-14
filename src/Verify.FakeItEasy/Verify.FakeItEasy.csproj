@@ -7,6 +7,5 @@
     <PackageReference Include="Verify" />
     <PackageReference Include="ProjectDefaults" PrivateAssets="all" />
     <PackageReference Include="FakeItEasy" />
-    <PackageReference Include="Polyfill" PrivateAssets="all" />
   </ItemGroup>
 </Project>
