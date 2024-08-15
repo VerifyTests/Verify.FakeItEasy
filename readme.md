@@ -53,7 +53,7 @@ public Task ReceivedCalls()
     return Verify(calls);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L5-L16' title='Snippet source file'>snippet source</a> | <a href='#snippet-ReceivedCalls' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L3-L14' title='Snippet source file'>snippet source</a> | <a href='#snippet-ReceivedCalls' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Will result in:
@@ -88,5 +88,5 @@ public Task FakeManager()
     return Verify(fakeManager);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L18-L29' title='Snippet source file'>snippet source</a> | <a href='#snippet-FakeManager' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L16-L27' title='Snippet source file'>snippet source</a> | <a href='#snippet-FakeManager' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
