@@ -1,6 +1,4 @@
-﻿using FakeItEasy;
-
-public class Tests
+﻿public class Tests
 {
     #region ReceivedCalls
 

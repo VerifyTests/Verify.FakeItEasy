@@ -1,5 +1,4 @@
 ﻿using FakeItEasy;
-using FakeItEasy.Core;
 
 class FakeConverter :
     WriteOnlyJsonConverter<FakeManager>
