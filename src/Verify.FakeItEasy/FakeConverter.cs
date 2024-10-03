@@ -1,6 +1,4 @@
-﻿using FakeItEasy;
-
-class FakeConverter :
+﻿class FakeConverter :
     WriteOnlyJsonConverter<FakeManager>
 {
     public override void Write(VerifyJsonWriter writer, FakeManager fake) =>
