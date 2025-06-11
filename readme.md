@@ -9,9 +9,9 @@ Adds [Verify](https://github.com/VerifyTests/Verify) support for verifying [Fake
 **See [Milestones](../../milestones?state=closed) for release notes.**
 
 
-## NuGet package
+## NuGet
 
-https://nuget.org/packages/Verify.FakeItEasy/
+ * https://nuget.org/packages/Verify.FakeItEasy
 
 
 ## Usage
