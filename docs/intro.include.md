@@ -1,0 +1,1 @@
+Adds [Verify](https://github.com/VerifyTests/Verify) support for verifying [FakeItEasy](https://fakeiteasy.github.io/) types.
